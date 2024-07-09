@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { DefaultPage } from 'components/DefaultPage';
 import { Menu } from 'components/Menu'
+import { Footer } from 'components/Footer';
 import { Home } from './pages/Home';
 import { About } from './pages/About';
 
@@ -17,6 +18,8 @@ export function RoutesComponent() {
 
         <Route path="*" element={<div>Página não encontrada</div>} />
       </Routes>
+      
+      <Footer />
     </BrowserRouter>
   );
 }
